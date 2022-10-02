@@ -16,6 +16,7 @@ The purpose of these config is to define a common set of strict rules to validat
   - [ESLint](#eslint)
   - [Husky](#husky)
   - [LintStaged](#lintstaged)
+  - [CommitLint](#commitlint)
 
 # Setup monorepo
 
@@ -230,4 +231,46 @@ The purpose of these config is to define a common set of strict rules to validat
     "*.{js,json}": "pnpm format:fix",
     "*.js": "pnpm lint:fix"
   }
+  ```
+
+## CommitLint
+
+- Add reference to `@muravjev/commitlint-config`
+
+  ```
+  pnpm add -w -D @muravjev/commitlint-config
+  ```
+
+- Add reference to peer dependency `@commitlint/cli`
+
+  ```
+  pnpm add -w -D @commitlint/cli
+  ```
+
+- Add commitlint configuration file `./configs/.commitlintrc.js`
+
+  ```
+  // .commitlintrc.js
+
+  module.exports = require('@muravjev/commitlint-config');
+  ```
+
+- Add commitlint script to `./package.json`
+
+  ```
+  // package.json
+
+  "scripts": {
+    ...
+    "commitlint": "commitlint -e-config ./configs/.commitlintrc.js"
+    ...
+  }
+  ```
+
+- Add husky hook `commit-msg`
+
+  > `Husky` shall be installed
+
+  ```
+  pnpx husky add configs/.husky/commit-msg 'pnpm commitlint --edit $1'
   ```
