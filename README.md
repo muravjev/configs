@@ -17,6 +17,7 @@ The purpose of these config is to define a common set of strict rules to validat
   - [Husky](#husky)
   - [LintStaged](#lintstaged)
   - [CommitLint](#commitlint)
+  - [Changesets](#changesets)
 
 # Setup monorepo
 
@@ -273,4 +274,33 @@ The purpose of these config is to define a common set of strict rules to validat
 
   ```
   pnpx husky add configs/.husky/commit-msg 'pnpm commitlint --edit $1'
+  ```
+
+## Changesets
+
+- Add reference to `@changesets/cli`
+
+  ```
+  pnpm add -w -D @changesets/cli
+  ```
+
+- Initialize changesets
+
+  ```
+  pnpm changeset init
+  ```
+
+- Use changesets
+
+  ```bash
+  pnpm changesets
+
+  # ... make changes
+
+  pnpm changesets version
+
+  # ... commit chore: release
+
+  pnpm publish
+
   ```
