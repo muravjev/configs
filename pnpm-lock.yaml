@@ -6,9 +6,11 @@ importers:
     specifiers:
       '@muravjev/eslint-config': workspace:^1.0.0
       '@muravjev/prettier-config': workspace:^1.0.0
+      husky: ^8.0.1
     devDependencies:
       '@muravjev/eslint-config': link:packages/eslint-config
       '@muravjev/prettier-config': link:packages/prettier-config
+      husky: 8.0.1
 
   packages/eslint-config:
     specifiers:
@@ -365,6 +367,12 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
     dev: false
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /ignore/5.2.0:
     resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
