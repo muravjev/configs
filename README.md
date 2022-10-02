@@ -14,6 +14,7 @@ The purpose of these config is to define a common set of strict rules to validat
 - [Configure monorepo](#configure-monorepo)
   - [Prettier](#prettier)
   - [ESLint](#eslint)
+  - [Husky](#husky)
 
 # Setup monorepo
 
@@ -141,10 +142,10 @@ The purpose of these config is to define a common set of strict rules to validat
 
 ## ESLint
 
-- Add reference to `@muravjev/eslint-config`
+- Add reference to `@muravjev/eslint-config-monorepo`
 
   ```
-  pnpm add -w -D @muravjev/eslint-config
+  pnpm add -w -D @muravjev/eslint-config-monorepo
   ```
 
 - Add eslint configuration file `./configs/.eslintrc.js`
@@ -152,7 +153,7 @@ The purpose of these config is to define a common set of strict rules to validat
   ```
   // .eslintrc.js
 
-  module.exports = require('@muravjev/eslint-config');
+  module.exports = require('@muravjev/eslint-config-monorepo');
   ```
 
 - Add eslint ignore patterns file `./configs/.eslintignore`
@@ -180,3 +181,23 @@ The purpose of these config is to define a common set of strict rules to validat
 >
 > - pnpm lint {files}
 > - pnpm lint:fix {files}
+
+## Husky
+
+- Add reference to `husky`
+
+  ```
+  pnpm add -w -D husky
+  ```
+
+- Add husky's install hooks script to `./package.json`
+
+  ```
+  // package.json
+
+  "scripts": {
+    ...
+    "prepare": "husky install ./configs/.husky"
+    ...
+  }
+  ```

@@ -11,11 +11,13 @@
     "format": "prettier --config ./configs/.prettierrc.js --ignore-path ./configs/.prettierignore",
     "format:fix": "pnpm format --write",
     "lint": "eslint --config ./configs/.eslintrc.js --ignore-path ./configs/.eslintignore",
-    "lint:fix": "pnpm lint --fix"
+    "lint:fix": "pnpm lint --fix",
+    "prepare": "husky install ./configs/.husky"
   },
   "devDependencies": {
     "@muravjev/eslint-config": "workspace:^1.0.0",
-    "@muravjev/prettier-config": "workspace:^1.0.0"
+    "@muravjev/prettier-config": "workspace:^1.0.0",
+    "husky": "^8.0.1"
   },
   "engines": {
     "node": ">=14.0.0",
