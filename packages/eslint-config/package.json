@@ -1,0 +1,23 @@
+{
+  "name": "@muravjev/eslint-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Muravjev Sergey",
+  "description": "Shared eslint config for monorepo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muravjev/config"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish-manual": "npm publish"
+  },
+  "peerDependencies": {
+    "eslint": "8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-log-filenames": "^1.0.6"
+  }
+}
