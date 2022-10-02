@@ -1,0 +1,21 @@
+{
+  "name": "@muravjev/prettier-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Muravjev Sergey",
+  "description": "Shared prettier config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muravjev/config"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish-manual": "npm publish"
+  },
+  "peerDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

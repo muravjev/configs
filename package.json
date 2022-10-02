@@ -7,7 +7,12 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
-    "fresh": "pnpm clean && pnpm i"
+    "fresh": "pnpm clean && pnpm i",
+    "format": "prettier --config ./configs/.prettierrc.js --ignore-path ./configs/.prettierignore",
+    "format:fix": "pnpm format --write"
+  },
+  "devDependencies": {
+    "@muravjev/prettier-config": "workspace:^1.0.0"
   },
   "engines": {
     "node": ">=14.0.0",

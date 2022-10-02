@@ -1,0 +1,5 @@
+{
+  "prettier.requireConfig": true,
+  "prettier.ignorePath": "./configs/.prettierignore",
+  "prettier.configPath": "./configs/.prettierrc.js"
+}
