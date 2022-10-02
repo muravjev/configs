@@ -15,6 +15,7 @@ The purpose of these config is to define a common set of strict rules to validat
   - [Prettier](#prettier)
   - [ESLint](#eslint)
   - [Husky](#husky)
+  - [LintStaged](#lintstaged)
 
 # Setup monorepo
 
@@ -199,5 +200,34 @@ The purpose of these config is to define a common set of strict rules to validat
     ...
     "prepare": "husky install ./configs/.husky"
     ...
+  }
+  ```
+
+## LintStaged
+
+- Add reference to `lint-staged`
+
+  ```
+  pnpm add -w -D lint-staged
+  ```
+
+- Add husky `pre-commit` hook
+
+  > `Husky` shall be installed
+
+  ```
+  pnpx husky add configs/.husky/pre-commit 'pnpx lint-staged --quiet'
+  ```
+
+- Add lint-staged section to `./package.json`
+
+  > `Prettier` and `ESLint` shall be installed
+
+  ```
+  // package.json
+
+  "lint-staged": {
+    "*.{js,json}": "pnpm format:fix",
+    "*.js": "pnpm lint:fix"
   }
   ```
