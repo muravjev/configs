@@ -13,6 +13,7 @@ The purpose of these config is to define a common set of strict rules to validat
   - [Workspace](#workspace)
 - [Configure monorepo](#configure-monorepo)
   - [Prettier](#prettier)
+  - [ESLint](#eslint)
 
 # Setup monorepo
 
@@ -137,3 +138,45 @@ The purpose of these config is to define a common set of strict rules to validat
 >
 > - pnpm format {path} -c
 > - pnpm format:fix {path}
+
+## ESLint
+
+- Add reference to `@muravjev/eslint-config`
+
+  ```
+  pnpm add -w -D @muravjev/eslint-config
+  ```
+
+- Add eslint configuration file `./configs/.eslintrc.js`
+
+  ```
+  // .eslintrc.js
+
+  module.exports = require('@muravjev/eslint-config');
+  ```
+
+- Add eslint ignore patterns file `./configs/.eslintignore`
+
+  ```
+  // .eslintignore
+
+  **/node_modules
+  ```
+
+- Add eslint scripts to `./package.json`
+
+  ```
+  // package.json
+
+  "scripts": {
+    ...
+    "lint": "eslint --config ./configs/.eslintrc.js --ignore-path ./configs/.eslintignore"
+    "lint:fix": "pnpm lint --fix"
+    ...
+  }
+  ```
+
+> **USAGE**:
+>
+> - pnpm lint {files}
+> - pnpm lint:fix {files}

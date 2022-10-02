@@ -9,9 +9,12 @@
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm i",
     "format": "prettier --config ./configs/.prettierrc.js --ignore-path ./configs/.prettierignore",
-    "format:fix": "pnpm format --write"
+    "format:fix": "pnpm format --write",
+    "lint": "eslint --config ./configs/.eslintrc.js --ignore-path ./configs/.eslintignore",
+    "lint:fix": "pnpm lint --fix"
   },
   "devDependencies": {
+    "@muravjev/eslint-config": "workspace:^1.0.0",
     "@muravjev/prettier-config": "workspace:^1.0.0"
   },
   "engines": {
