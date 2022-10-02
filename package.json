@@ -17,7 +17,12 @@
   "devDependencies": {
     "@muravjev/eslint-config": "workspace:^1.0.0",
     "@muravjev/prettier-config": "workspace:^1.0.0",
-    "husky": "^8.0.1"
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "lint-staged": {
+    "*.{js,json}": "pnpm format:fix",
+    "*.js": "pnpm lint:fix"
   },
   "engines": {
     "node": ">=14.0.0",
