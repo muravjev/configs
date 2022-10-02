@@ -11,6 +11,8 @@ The purpose of these config is to define a common set of strict rules to validat
   - [Package](#package)
   - [Scripts](#scripts)
   - [Workspace](#workspace)
+- [Configure monorepo](#configure-monorepo)
+  - [Prettier](#prettier)
 
 # Setup monorepo
 
@@ -77,3 +79,61 @@ The purpose of these config is to define a common set of strict rules to validat
   packages:
     - 'packages/*'
   ```
+
+# Configure monorepo
+
+## Prettier
+
+- Add reference to `@muravjev/prettier-config`
+
+  ```
+  pnpm add -w -D @muravjev/prettier-config
+  ```
+
+- Add prettier configuration file `./configs/.prettierrc.js`
+
+  ```
+  // .prettierrc.js
+
+  module.exports = require('@muravjev/prettier-config');
+  ```
+
+- Add prettier ignore patterns file `./configs/.prettierignore`
+
+  ```
+  // .prettierignore
+
+  **/node_modules
+  ```
+
+- Add prettier scripts to `./package.json`
+
+  ```
+  // package.json
+
+  "scripts": {
+    ...
+    "format": "prettier --config ./configs/.prettierrc.js --ignore-path ./configs/.prettierignore"
+    "format:fix": "pnpm format --write"
+    ...
+  }
+  ```
+
+- If you using vs code `prettier` plugin, configure it, by adding these settings to `./.vscode/settings.json`
+
+  ```
+  // settings.json
+
+  {
+    ...
+    "prettier.requireConfig": true,
+    "prettier.ignorePath": "./configs/.prettierignore",
+    "prettier.configPath": "./configs/.prettierrc.js"
+    ...
+  }
+  ```
+
+> **USAGE**:
+>
+> - pnpm format {path} -c
+> - pnpm format:fix {path}

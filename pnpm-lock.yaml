@@ -1,0 +1,9 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      '@muravjev/prettier-config': workspace:^1.0.0
+    devDependencies:
+      '@muravjev/prettier-config': link:packages/prettier-config
