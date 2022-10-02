@@ -12,9 +12,12 @@
     "format:fix": "pnpm format --write",
     "lint": "eslint --config ./configs/.eslintrc.js --ignore-path ./configs/.eslintignore",
     "lint:fix": "pnpm lint --fix",
+    "commitlint": "commitlint --config ./configs/.commitlintrc.js",
     "prepare": "husky install ./configs/.husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@muravjev/commitlint-config": "workspace:^1.0.0",
     "@muravjev/eslint-config": "workspace:^1.0.0",
     "@muravjev/prettier-config": "workspace:^1.0.0",
     "husky": "^8.0.1",
