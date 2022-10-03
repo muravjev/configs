@@ -1,5 +1,11 @@
 # @muravjev/eslint-config
 
+## 0.3.1
+
+### Patch Changes
+
+- 59c55f1: Fix peer dependencies
+
 ## 0.3.0
 
 ### Minor Changes
