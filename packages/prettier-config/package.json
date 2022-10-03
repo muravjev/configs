@@ -1,20 +1,26 @@
 {
   "name": "@muravjev/prettier-config",
   "version": "0.2.0",
-  "license": "MIT",
-  "author": "Muravjev Sergey",
+  "keywords": [
+    "muravjev",
+    "monorepo",
+    "config",
+    "pnpm",
+    "prettier"
+  ],
   "description": "Shared prettier config",
-  "main": "index.js",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
   "repository": {
+    "url": "https://github.com/muravjev/config",
     "type": "git",
-    "url": "https://github.com/muravjev/config"
+    "directory": "packages/prettier-config"
   },
-  "publishConfig": {
-    "access": "public"
+  "homepage": "https://github.com/muravjev/config#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/config/issues"
   },
-  "scripts": {
-    "publish-manual": "npm publish"
-  },
+  "main": "index.js",
   "peerDependencies": {
     "prettier": "^2.7.1"
   }

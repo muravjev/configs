@@ -1,23 +1,31 @@
 {
   "name": "@muravjev/commitlint-config",
   "version": "0.2.0",
-  "license": "MIT",
-  "author": "Muravjev Sergey",
+  "keywords": [
+    "muravjev",
+    "monorepo",
+    "config",
+    "pnpm",
+    "commitlint"
+  ],
   "description": "Shared commitlint config",
-  "main": "index.js",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
   "repository": {
+    "url": "https://github.com/muravjev/config",
     "type": "git",
-    "url": "https://github.com/muravjev/config"
+    "directory": "packages/commitlint-config"
   },
-  "publishConfig": {
-    "access": "public"
+  "homepage": "https://github.com/muravjev/config#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/config/issues"
   },
-  "scripts": {
-    "publish-manual": "npm publish"
-  },
-  "peerDependencies": {
-    "@commitlint/cli": "^17.1.2",
+  "main": "index.js",
+  "devDependencies": {
     "@commitlint/config-conventional": "^17.1.0",
     "@commitlint/types": "^17.0.0"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^17.1.2"
   }
 }

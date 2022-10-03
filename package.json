@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Shared monorepo config",
-  "author": "Sergey Muravjev",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
@@ -29,8 +29,8 @@
     "*.js": "pnpm lint:fix"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "pnpm": ">=7.0.0"
+    "node": ">=14.6.0",
+    "pnpm": ">=7.10.0"
   },
-  "packageManager": "pnpm@6.32.3"
+  "packageManager": "pnpm@7.10.0"
 }
