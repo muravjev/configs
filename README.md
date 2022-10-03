@@ -25,21 +25,21 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Create git repo
 
-  ```
+  ```bash
   git init
   ```
 
 - Add git ignore file `./.gitignore`
 
-  ```
+  ```js
   // .gitignore
 
-  node_modules
+  node_modules;
   ```
 
 - Add git attributes file `./.gitattributes`
 
-  ```
+  ```js
   // .gitattributes
 
   **/pnpm-lock.yaml -diff
@@ -47,9 +47,9 @@ The purpose of these config is to define a common set of strict rules to validat
 
 ## Package
 
-- Add package file `./package.json`
+- Create package file `./package.json`
 
-  ```
+  ```bash
   pnpm init
   ```
 
@@ -57,13 +57,13 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add global `rimraf`
 
-  ```
+  ```bash
   npm add -g rimraf
   ```
 
 - Add common scripts to `./package.json`
 
-  ```
+  ```json
   // package.json
 
   "scripts": {
@@ -78,8 +78,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add pnpm workspace file `./pnpm-workspace.yaml`
 
-  ```
-  // pnpm-workspace.yaml
+  ```yaml
+  # pnpm-workspace.yaml
 
   packages:
     - 'packages/*'
@@ -91,13 +91,13 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add reference to `@muravjev/prettier-config`
 
-  ```
+  ```bash
   pnpm add -w -D @muravjev/prettier-config
   ```
 
 - Add prettier configuration file `./configs/.prettierrc.js`
 
-  ```
+  ```js
   // .prettierrc.js
 
   module.exports = require('@muravjev/prettier-config');
@@ -105,7 +105,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add prettier ignore patterns file `./configs/.prettierignore`
 
-  ```
+  ```js
   // .prettierignore
 
   **/node_modules
@@ -113,7 +113,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add prettier scripts to `./package.json`
 
-  ```
+  ```json
   // package.json
 
   "scripts": {
@@ -126,7 +126,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - If you using vs code `prettier` plugin, configure it, by adding these settings to `./.vscode/settings.json`
 
-  ```
+  ```json
   // settings.json
 
   {
@@ -147,13 +147,13 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add reference to `@muravjev/eslint-config-monorepo`
 
-  ```
+  ```bash
   pnpm add -w -D @muravjev/eslint-config-monorepo
   ```
 
 - Add eslint configuration file `./configs/.eslintrc.js`
 
-  ```
+  ```js
   // .eslintrc.js
 
   module.exports = require('@muravjev/eslint-config-monorepo');
@@ -161,7 +161,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add eslint ignore patterns file `./configs/.eslintignore`
 
-  ```
+  ```js
   // .eslintignore
 
   **/node_modules
@@ -169,7 +169,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add eslint scripts to `./package.json`
 
-  ```
+  ```json
   // package.json
 
   "scripts": {
@@ -189,13 +189,13 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add reference to `husky`
 
-  ```
+  ```bash
   pnpm add -w -D husky
   ```
 
 - Add husky's install hooks script to `./package.json`
 
-  ```
+  ```json
   // package.json
 
   "scripts": {
@@ -209,7 +209,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add reference to `lint-staged`
 
-  ```
+  ```bash
   pnpm add -w -D lint-staged
   ```
 
@@ -217,7 +217,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
   > `Husky` shall be installed
 
-  ```
+  ```bash
   pnpx husky add configs/.husky/pre-commit 'pnpx lint-staged --quiet'
   ```
 
@@ -225,7 +225,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
   > `Prettier` and `ESLint` shall be installed
 
-  ```
+  ```json
   // package.json
 
   "lint-staged": {
@@ -238,19 +238,19 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add reference to `@muravjev/commitlint-config`
 
-  ```
+  ```bash
   pnpm add -w -D @muravjev/commitlint-config
   ```
 
 - Add reference to peer dependency `@commitlint/cli`
 
-  ```
+  ```bash
   pnpm add -w -D @commitlint/cli
   ```
 
 - Add commitlint configuration file `./configs/.commitlintrc.js`
 
-  ```
+  ```js
   // .commitlintrc.js
 
   module.exports = require('@muravjev/commitlint-config');
@@ -258,7 +258,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add commitlint script to `./package.json`
 
-  ```
+  ```json
   // package.json
 
   "scripts": {
@@ -272,7 +272,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
   > `Husky` shall be installed
 
-  ```
+  ```bash
   pnpx husky add configs/.husky/commit-msg 'pnpm commitlint --edit $1'
   ```
 
@@ -280,14 +280,15 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add reference to `@changesets/cli`
 
-  ```
+  ```bash
   pnpm add -w -D @changesets/cli
   ```
 
 - Initialize changesets
 
-  ```
+  ```bash
   pnpm changeset init
+
   ```
 
 - Use changesets
@@ -300,6 +301,11 @@ The purpose of these config is to define a common set of strict rules to validat
   pnpm changesets version
 
   # ... commit chore: release
+  git add .
+  git
+
+  pnpm changesets tag
+  git push --follow-tags
 
   pnpm publish
 
