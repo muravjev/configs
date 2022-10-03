@@ -1,23 +1,32 @@
 {
   "name": "@muravjev/eslint-config",
   "version": "0.2.0",
+  "keywords": [
+    "muravjev",
+    "monorepo",
+    "config",
+    "pnpm",
+    "eslint"
+  ],
+  "description": "Shared eslint config",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
-  "author": "Muravjev Sergey",
-  "description": "Shared eslint config for monorepo",
-  "main": "index.js",
   "repository": {
+    "url": "https://github.com/muravjev/config",
     "type": "git",
-    "url": "https://github.com/muravjev/config"
+    "directory": "packages/eslint-config"
   },
-  "publishConfig": {
-    "access": "public"
+  "homepage": "https://github.com/muravjev/config#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/config/issues"
   },
-  "scripts": {
-    "publish-manual": "npm publish"
-  },
-  "peerDependencies": {
+  "main": "index.js",
+  "devDependencies": {
     "eslint": "8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-log-filenames": "^1.0.6"
+  },
+  "peerDependencies": {
+    "eslint": "8.19.0"
   }
 }
