@@ -1,6 +1,6 @@
-# Muravjev's monorepo config
+# Monorepo config
 
-Common config for monorepo with `pnpm` + `eslint` + `prettier` + `husky` + `lintstaged` + `commitlint` + `changesets` etc.
+Common config for monorepos with `pnpm` + `eslint` + `prettier` + `husky` + `lintstaged` + `commitlint` + `changesets` etc.
 
 The purpose of these config is to define a common set of strict rules to validate the coding standards in monorepo.
 
@@ -316,6 +316,6 @@ The purpose of these config is to define a common set of strict rules to validat
   git push --follow-tags
 
   # publish package
-  pnpm publish
+  pnpm publish --access=public
 
   ```
