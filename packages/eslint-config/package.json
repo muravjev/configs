@@ -21,9 +21,11 @@
     "url": "https://github.com/muravjev/config/issues"
   },
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "8.19.0",
+  "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-log-filenames": "^1.0.6"
+  },
+  "peerDependencies": {
+    "eslint": "8.19.0"
   }
 }

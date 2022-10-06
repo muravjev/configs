@@ -68,7 +68,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
   "scripts": {
     ...
-    "clean": "rimraf \"**/node_modules\"",
+    "clean": "rimraf \"**/node_modules\" && pnpm -r clean",
     "fresh": "pnpm clean && pnpm i"
     ...
   }
@@ -89,13 +89,13 @@ The purpose of these config is to define a common set of strict rules to validat
 
 ## Prettier
 
-- Add reference to `@muravjev/prettier-config`
+- Add reference to `@muravjev/prettier-config` and its peer dependencies
 
   ```sh
-  pnpm add -w -D @muravjev/prettier-config
+  pnpx install-peerdeps @muravjev/prettier-config --pnpm
   ```
 
-- Add prettier configuration file `./configs/.prettierrc.js`
+- Add prettier configuration file `./.prettierrc.js`
 
   ```js
   // .prettierrc.js
@@ -103,12 +103,13 @@ The purpose of these config is to define a common set of strict rules to validat
   module.exports = require('@muravjev/prettier-config');
   ```
 
-- Add prettier ignore patterns file `./configs/.prettierignore`
+- Add prettier ignore patterns file `./.prettierignore`
 
   ```sh
   # .prettierignore
 
   **/node_modules
+  pnpm-lock.yaml
   ```
 
 - Add prettier scripts to `./package.json`
@@ -118,7 +119,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
   "scripts": {
     ...
-    "format": "prettier --config ./configs/.prettierrc.js --ignore-path ./configs/.prettierignore"
+    "format": "prettier",
+    "format:check": "pnpm format --check --debug-check",
     "format:fix": "pnpm format --write"
     ...
   }
@@ -131,9 +133,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
   {
     ...
+    "files.eol": "\n",
     "prettier.requireConfig": true,
-    "prettier.ignorePath": "./configs/.prettierignore",
-    "prettier.configPath": "./configs/.prettierrc.js"
     ...
   }
   ```
@@ -141,27 +142,27 @@ The purpose of these config is to define a common set of strict rules to validat
 - Use `prettier`
 
   ```sh
-  pnpm format {path} -c
-  pnpm format:fix {path}
+  pnpm format:check .
+  pnpm format:fix .
   ```
 
 ## ESLint
 
-- Add reference to `@muravjev/eslint-config-monorepo`
+- Add reference to `@muravjev/eslint-config` and its peer dependencies
 
   ```sh
-  pnpm add -w -D @muravjev/eslint-config-monorepo
+  pnpx install-peerdeps @muravjev/eslint-config --pnpm
   ```
 
-- Add eslint configuration file `./configs/.eslintrc.js`
+- Add eslint configuration file `./.eslintrc.js`
 
   ```js
   // .eslintrc.js
 
-  module.exports = require('@muravjev/eslint-config-monorepo');
+  module.exports = require('@muravjev/eslint-config');
   ```
 
-- Add eslint ignore patterns file `./configs/.eslintignore`
+- Add eslint ignore patterns file `./.eslintignore`
 
   ```sh
   # .eslintignore
@@ -176,8 +177,23 @@ The purpose of these config is to define a common set of strict rules to validat
 
   "scripts": {
     ...
-    "lint": "eslint --config ./configs/.eslintrc.js --ignore-path ./configs/.eslintignore"
+    "lint": "eslint",
     "lint:fix": "pnpm lint --fix"
+    ...
+  }
+  ```
+
+- If you using vs code `eslint` plugin, configure it, by adding these settings to `./.vscode/settings.json`
+
+  ```json5
+  // settings.json
+
+  {
+    ...
+    "eslint.enable": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.debug": false,
+    "eslint.workingDirectories": [{ "pattern": "./packages/*/" }]
     ...
   }
   ```
@@ -185,8 +201,8 @@ The purpose of these config is to define a common set of strict rules to validat
 - Use `eslint`
 
   ```sh
-  pnpm lint {path} -c
-  pnpm lint:fix {path}
+  pnpm lint .
+  pnpm lint:fix .
   ```
 
 ## Husky
@@ -204,7 +220,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
   "scripts": {
     ...
-    "prepare": "husky install ./configs/.husky"
+    "prepare": "husky install"
     ...
   }
   ```
@@ -222,7 +238,7 @@ The purpose of these config is to define a common set of strict rules to validat
   > `Husky` shall be installed
 
   ```sh
-  pnpx husky add configs/.husky/pre-commit 'pnpx lint-staged --quiet'
+  pnpx husky add .husky/pre-commit 'pnpx lint-staged --quiet'
   ```
 
 - Add lint-staged section to `./package.json`
@@ -241,19 +257,13 @@ The purpose of these config is to define a common set of strict rules to validat
 
 ## CommitLint
 
-- Add reference to `@muravjev/commitlint-config`
+- Add reference to `@muravjev/commitlint-config` and its peer dependencies
 
   ```sh
-  pnpm add -w -D @muravjev/commitlint-config
+  pnpx install-peerdeps @muravjev/commitlint-config --pnpm
   ```
 
-- Add reference to peer dependency `@commitlint/cli`
-
-  ```sh
-  pnpm add -w -D @commitlint/cli
-  ```
-
-- Add commitlint configuration file `./configs/.commitlintrc.js`
+- Add commitlint configuration file `./.commitlintrc.js`
 
   ```js
   // .commitlintrc.js
@@ -268,7 +278,7 @@ The purpose of these config is to define a common set of strict rules to validat
 
   "scripts": {
     ...
-    "commitlint": "commitlint -e-config ./configs/.commitlintrc.js"
+    "commitlint": "commitlint"
     ...
   }
   ```
@@ -278,7 +288,7 @@ The purpose of these config is to define a common set of strict rules to validat
   > `Husky` shall be installed
 
   ```sh
-  pnpx husky add configs/.husky/commit-msg 'pnpm commitlint --edit $1'
+  pnpx husky add .husky/commit-msg 'pnpm commitlint --edit $1'
   ```
 
 ## Changesets

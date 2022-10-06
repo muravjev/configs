@@ -16,7 +16,7 @@
     "commitlint": "commitlint",
     "prepare": "husky install"
   },
-  "devDependencies": {
+  "dependencies": {
     "@changesets/cli": "^2.25.0",
     "@commitlint/cli": "^17.1.2",
     "@muravjev/commitlint-config": "*",
