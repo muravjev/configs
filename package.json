@@ -31,7 +31,9 @@
   },
   "engines": {
     "node": ">=14.6.0",
-    "pnpm": ">=7.10.0"
+    "pnpm": ">=7.10.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   },
   "packageManager": "pnpm@7.10.0"
 }
