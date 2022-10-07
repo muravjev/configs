@@ -321,11 +321,17 @@ The purpose of these config is to define a common set of strict rules to validat
   git add .
   git commit -m "chore: release"
 
-  # add and commit tags
+  # publish all changed packages and add version tags
+  pnpm changeset publish
+  git push --follow-tags
+
+  # OR
+
+  # add version tags
   pnpm changeset tag
   git push --follow-tags
 
-  # publish package
+  # manually publish package
   pnpm publish --access=public
 
   ```
