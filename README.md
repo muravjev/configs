@@ -299,20 +299,20 @@ The purpose of these config is to define a common set of strict rules to validat
 - Use changesets
 
   ```sh
-  # create changesets
-  pnpm changesets
+  # create changeset
+  pnpm changeset add
 
   # ... make changes
 
   # create changelogs and update versions
-  pnpm changesets version
+  pnpm changeset version
 
   # commit changes
   git add .
   git commit -m "chore: release"
 
   # add and commit tags
-  pnpm changesets tag
+  pnpm changeset tag
   git push --follow-tags
 
   # publish package
