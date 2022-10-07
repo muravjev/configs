@@ -1,5 +1,10 @@
 {
+  "files.eol": "\n",
+
   "prettier.requireConfig": true,
-  "prettier.ignorePath": "./configs/.prettierignore",
-  "prettier.configPath": "./configs/.prettierrc.js"
+
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": false,
+  "eslint.workingDirectories": [{ "pattern": "./packages/*/" }]
 }

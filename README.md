@@ -63,8 +63,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add common scripts to `./package.json`
 
-  ```yaml
-  # package.json
+  ```json5
+  // package.json
 
   "scripts": {
     ...
@@ -113,8 +113,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add prettier scripts to `./package.json`
 
-  ```yaml
-  # package.json
+  ```json5
+  // package.json
 
   "scripts": {
     ...
@@ -126,8 +126,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - If you using vs code `prettier` plugin, configure it, by adding these settings to `./.vscode/settings.json`
 
-  ```yaml
-  # settings.json
+  ```json5
+  // settings.json
 
   {
     ...
@@ -171,8 +171,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add eslint scripts to `./package.json`
 
-  ```yaml
-  # package.json
+  ```json5
+  // package.json
 
   "scripts": {
     ...
@@ -199,8 +199,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add husky's install hooks script to `./package.json`
 
-  ```yaml
-  # package.json
+  ```json5
+  // package.json
 
   "scripts": {
     ...
@@ -229,8 +229,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
   > `Prettier` and `ESLint` shall be installed
 
-  ```yaml
-  # package.json
+  ```json5
+  // package.json
 
   "lint-staged": {
     "*.{js,json}": "pnpm format:fix",
@@ -263,8 +263,8 @@ The purpose of these config is to define a common set of strict rules to validat
 
 - Add commitlint script to `./package.json`
 
-  ```yaml
-  # package.json
+  ```json5
+  // package.json
 
   "scripts": {
     ...
@@ -299,20 +299,20 @@ The purpose of these config is to define a common set of strict rules to validat
 - Use changesets
 
   ```sh
-  # create changesets
-  pnpm changesets
+  # create changeset
+  pnpm changeset add
 
   # ... make changes
 
   # create changelogs and update versions
-  pnpm changesets version
+  pnpm changeset version
 
   # commit changes
   git add .
   git commit -m "chore: release"
 
   # add and commit tags
-  pnpm changesets tag
+  pnpm changeset tag
   git push --follow-tags
 
   # publish package

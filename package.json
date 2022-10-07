@@ -8,12 +8,13 @@
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm i",
-    "format": "prettier --config ./configs/.prettierrc.js --ignore-path ./configs/.prettierignore",
+    "format": "prettier",
+    "format:check": "pnpm format --check --debug-check",
     "format:fix": "pnpm format --write",
-    "lint": "eslint --config ./configs/.eslintrc.js --ignore-path ./configs/.eslintignore",
+    "lint": "eslint",
     "lint:fix": "pnpm lint --fix",
-    "commitlint": "commitlint --config ./configs/.commitlintrc.js",
-    "prepare": "husky install ./configs/.husky"
+    "commitlint": "commitlint",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.0",
@@ -30,7 +31,9 @@
   },
   "engines": {
     "node": ">=14.6.0",
-    "pnpm": ">=7.10.0"
+    "pnpm": ">=7.10.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   },
   "packageManager": "pnpm@7.10.0"
 }
