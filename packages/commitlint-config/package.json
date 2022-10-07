@@ -24,10 +24,8 @@
     "url": "https://github.com/muravjev/config/issues"
   },
   "main": "index.js",
-  "devDependencies": {
-    "@commitlint/config-conventional": "^17.1.0"
-  },
   "peerDependencies": {
-    "@commitlint/cli": "^17.1.2"
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0"
   }
 }
