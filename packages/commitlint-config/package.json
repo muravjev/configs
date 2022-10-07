@@ -11,6 +11,9 @@
   "description": "Shared commitlint config",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "url": "https://github.com/muravjev/config",
     "type": "git",
