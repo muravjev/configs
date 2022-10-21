@@ -1,16 +1,16 @@
-# @muravjev/eslint-config
+# @muravjev/configs-eslint-ts
 
 ## 0.3.2
 
 ### Patch Changes
 
-- 5067c33: Review peer and dev dependencies
+- Review peer and dev dependencies
 
 ## 0.3.1
 
 ### Patch Changes
 
-- 59c55f1: Fix peer dependencies
+- Fix peer dependencies
 
 ## 0.3.0
 
