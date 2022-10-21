@@ -1,4 +1,4 @@
-# @muravjev/prettier-config
+# @muravjev/configs-prettier
 
 ## 0.3.0
 

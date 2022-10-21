@@ -1,10 +1,9 @@
 {
-  "name": "@muravjev/prettier-config",
+  "name": "@muravjev/configs-prettier",
   "version": "0.3.0",
   "keywords": [
     "muravjev",
-    "monorepo",
-    "config",
+    "configs",
     "pnpm",
     "prettier"
   ],
@@ -15,16 +14,19 @@
     "access": "public"
   },
   "repository": {
-    "url": "https://github.com/muravjev/config",
+    "url": "https://github.com/muravjev/configs",
     "type": "git",
-    "directory": "packages/prettier-config"
+    "directory": "packages/prettier"
   },
-  "homepage": "https://github.com/muravjev/config#readme",
+  "homepage": "https://github.com/muravjev/configs#readme",
   "bugs": {
-    "url": "https://github.com/muravjev/config/issues"
+    "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
   "peerDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
     "prettier": "^2.7.1"
   }
 }
