@@ -1,10 +1,9 @@
 {
-  "name": "@muravjev/commitlint-config",
-  "version": "0.4.0",
+  "name": "@muravjev/configs-commitlint",
+  "version": "0.1.0",
   "keywords": [
     "muravjev",
-    "monorepo",
-    "config",
+    "configs",
     "pnpm",
     "commitlint"
   ],
@@ -15,16 +14,20 @@
     "access": "public"
   },
   "repository": {
-    "url": "https://github.com/muravjev/config",
+    "url": "https://github.com/muravjev/configs",
     "type": "git",
-    "directory": "packages/commitlint-config"
+    "directory": "packages/commitlint"
   },
-  "homepage": "https://github.com/muravjev/config#readme",
+  "homepage": "https://github.com/muravjev/configs#readme",
   "bugs": {
-    "url": "https://github.com/muravjev/config/issues"
+    "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
   "peerDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0"
+  },
+  "dependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0"
   }
