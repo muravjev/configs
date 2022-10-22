@@ -24,11 +24,11 @@
   },
   "main": "tsconfig.json",
   "peerDependencies": {
-    "@types/node": "18.8.3",
-    "typescript": "4.8.4"
+    "@types/node": "^18.8.3",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@types/node": "18.8.3",
-    "typescript": "4.8.4"
+    "@types/node": "^18.8.3",
+    "typescript": "^4.8.4"
   }
 }

@@ -31,9 +31,9 @@
     "eslint-plugin-prettier": "^4.2.1"
   },
   "peerDependencies": {
-    "eslint": "8.25.0"
+    "eslint": "^8.25.0"
   },
   "dependencies": {
-    "eslint": "8.25.0"
+    "eslint": "^8.25.0"
   }
 }
