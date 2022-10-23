@@ -15,22 +15,22 @@
     "lint": "eslint --ext mjs,js,ts,tsx",
     "lint:fix": "pnpm lint --fix",
     "remark": "remark",
-    "remark:fix": "pnpm remark -o -q",
+    "remark:fix": "pnpm remark -o --",
     "commitlint": "commitlint",
     "prepare": "husky install"
   },
   "dependencies": {
     "@changesets/cli": "^2.25.0",
     "@commitlint/cli": "^17.1.2",
-    "@muravjev/configs-commitlint": "workspace:^0.1.0",
+    "@muravjev/configs-commitlint": "workspace: *",
     "@muravjev/configs-eslint-ts": "workspace:*",
     "@muravjev/configs-prettier": "workspace:*",
     "@muravjev/configs-remark": "workspace:*",
     "eslint": "^8.26.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "micromatch": "^4.0.5",
     "prettier": "^2.7.1",
+    "remark": "^14.0.2",
     "remark-cli": "^11.0.0"
   },
   "engines": {
