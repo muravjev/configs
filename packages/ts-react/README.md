@@ -1,5 +1,47 @@
-# Shared typescript config for lib (ts + react) packages
+# Shared typescript configuration
 
-This is part of a [@muravjev/configs](https://github.com/muravjev/configs) monorepo.
+The purpose of the [typescript](https://www.typescriptlang.org/) is to add strong typing to `javascript`.
 
-Refer integration guide [here](../README.md#typescript-ts--react).
+> This configuration targets **lib react** packages.
+
+---
+
+## Contents
+
+- [Setup](#setup)
+- [License](#license)
+
+## Setup
+
+- Add reference to `@muravjev/configs-ts-react` and its peers dependencies:
+
+  ```sh
+  # add reference to packages/bar
+
+  pnpm add @muravjev/configs-ts-react typescript @types/react -D --filter bar
+  ```
+
+- Add typescript configuration file
+
+  ```json
+  // packages/bar/tsconfig.json
+
+  {
+    "extends": "@muravjev/configs-ts-react",
+    "compilerOptions": {
+      "baseUrl": "src",
+      "rootDir": "src"
+    },
+    "include": ["src"]
+  }
+  ```
+
+## License
+
+[MIT](LICENSE) © [Sergey Muravjev](https://github.com/muravjev)
+
+---
+
+[⬅ Back](../../README.md)
+
+---

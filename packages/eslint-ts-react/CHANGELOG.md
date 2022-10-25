@@ -4,4 +4,4 @@
 
 ### Minor Changes
 
-- Create initial version
+- Initial version

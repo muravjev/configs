@@ -1,5 +1,78 @@
-# Shared eslint config for monorepo (ts) and lib (ts) packages
+# Shared eslint configuration
 
-This is part of a [@muravjev/configs](https://github.com/muravjev/configs) monorepo.
+The purpose of the `eslint` is linting `javascript` and `typescript` languages (`js`, `ts`, `tsx`).
 
-Refer integration guide [here](../README.md#eslint).
+> This configuration targets **monorepo** packages.
+
+---
+
+## Contents
+
+- [Setup](#setup)
+- [Automation](#automation)
+- [Usage](#usage)
+- [License](#license)
+
+## Setup
+
+- Add reference to `@muravjev/configs-eslint-ts` and its peer dependencies:
+
+  ```sh
+  pnpm add @muravjev/configs-eslint-ts eslint -w
+  ```
+
+- Add eslint configuration file:
+
+  ```js
+  // .eslintrc.js
+
+  module.exports = require('@muravjev/configs-eslint-ts');
+  ```
+
+- Add eslint ignore patterns file:
+
+  ```sh
+  # .eslintignore
+
+  node_modules/
+  ...
+  ```
+
+- Add eslint scripts:
+
+  ```jsonc
+  // package.json
+
+  "scripts": {
+    ...
+    "lint": "eslint",
+    "lint:fix": "pnpm lint --fix"
+    ...
+  }
+  ```
+
+## Automation
+
+- Setup [➡ lint-staged](../../docs/tools/lint-staged.md) to run `eslint` automatically on commit.
+- Setup [➡ eslint vscode plugin](../../docs/plugins/vscode-eslint.md) to integrate `eslint` with vscode environment.
+
+## Usage
+
+- **Automatic** validation of staged files with `eslint` on commit.
+- **Automatic** validation file with `eslint` on save.
+- Manual usage from command line:
+
+  ```sh
+  pnpm lint .
+  pnpm lint:fix .
+  ```
+
+## License
+
+[MIT](LICENSE) © [Sergey Muravjev](https://github.com/muravjev)
+
+---
+
+[⬅ Back](../../README.md)
+
+---

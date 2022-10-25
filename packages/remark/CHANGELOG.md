@@ -4,4 +4,4 @@
 
 ### Minor Changes
 
-- Move configs to packages
+- Initial version
