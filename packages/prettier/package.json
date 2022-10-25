@@ -1,0 +1,32 @@
+{
+  "name": "@muravjev/configs-prettier",
+  "version": "0.1.0",
+  "keywords": [
+    "muravjev",
+    "configs",
+    "pnpm",
+    "prettier"
+  ],
+  "description": "Shared prettier config",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/muravjev/configs",
+    "type": "git",
+    "directory": "packages/prettier"
+  },
+  "homepage": "https://github.com/muravjev/configs#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/configs/issues"
+  },
+  "main": "index.js",
+  "peerDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}

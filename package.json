@@ -1,36 +1,39 @@
 {
-  "name": "@muravjev/config",
-  "version": "1.0.0",
+  "name": "@muravjev/configs",
   "private": true,
-  "description": "Shared monorepo config",
+  "description": "Shared configs",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm i",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
     "format": "prettier",
     "format:check": "pnpm format --check --debug-check",
     "format:fix": "pnpm format --write",
-    "lint": "eslint",
+    "lint": "eslint --ext mjs,js,ts,tsx",
     "lint:fix": "pnpm lint --fix",
+    "remark": "remark",
+    "remark:fix": "pnpm remark -o --",
     "commitlint": "commitlint",
     "prepare": "husky install"
   },
   "dependencies": {
     "@changesets/cli": "^2.25.0",
     "@commitlint/cli": "^17.1.2",
-    "@muravjev/commitlint-config": "*",
-    "@muravjev/eslint-config": "*",
-    "@muravjev/prettier-config": "*",
+    "@muravjev/configs-commitlint": "workspace: *",
+    "@muravjev/configs-eslint-ts": "workspace:*",
+    "@muravjev/configs-prettier": "workspace:*",
+    "@muravjev/configs-remark": "workspace:*",
+    "eslint": "^8.26.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3"
-  },
-  "lint-staged": {
-    "*.{js,json}": "pnpm format:fix",
-    "*.js": "pnpm lint:fix"
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "remark": "^14.0.2",
+    "remark-cli": "^11.0.0"
   },
   "engines": {
-    "node": ">=14.6.0",
+    "node": ">=14.16.0",
     "pnpm": ">=7.10.0",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm"

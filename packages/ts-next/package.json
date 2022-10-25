@@ -1,0 +1,34 @@
+{
+  "name": "@muravjev/configs-ts-next",
+  "version": "0.1.0",
+  "keywords": [
+    "muravjev",
+    "configs",
+    "pnpm",
+    "typescript",
+    "next"
+  ],
+  "description": "Shared typescript config for app (ts + next) packages",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/muravjev/configs",
+    "type": "git",
+    "directory": "packages/ts-next"
+  },
+  "homepage": "https://github.com/muravjev/configs#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/configs/issues"
+  },
+  "main": "tsconfig.json",
+  "devDependencies": {
+    "@muravjev/configs-ts-react": "workspace:*"
+  },
+  "peerDependencies": {
+    "@types/node": "^18.11.3",
+    "typescript": "^4.8.4"
+  }
+}

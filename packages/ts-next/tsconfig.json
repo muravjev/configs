@@ -1,0 +1,4 @@
+{
+  "extends": "@muravjev/configs-ts-react",
+  "exclude": ["node_modules"] //< Otherwise Next will add it during build
+}

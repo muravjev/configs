@@ -1,0 +1,36 @@
+{
+  "name": "@muravjev/configs-ts-react",
+  "version": "0.1.0",
+  "keywords": [
+    "muravjev",
+    "configs",
+    "pnpm",
+    "typescript",
+    "react"
+  ],
+  "description": "Shared typescript config for lib (ts + react) packages",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/muravjev/configs",
+    "type": "git",
+    "directory": "packages/ts-react"
+  },
+  "homepage": "https://github.com/muravjev/configs#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/configs/issues"
+  },
+  "main": "tsconfig.json",
+  "devDependencies": {
+    "@muravjev/configs-ts": "workspace:*"
+  },
+  "peerDependencies": {
+    "@types/node": "^18.11.3",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "typescript": "^4.8.4"
+  }
+}
