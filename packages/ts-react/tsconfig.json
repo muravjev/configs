@@ -1,4 +1,6 @@
 {
   "extends": "@muravjev/configs-ts",
-  "lib": ["esnext", "dom", "dom.iterable"] //< which language features are available
+  "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable"]
+  }
 }

@@ -1,13 +1,14 @@
 {
-  "name": "@muravjev/configs-commitlint",
-  "version": "0.2.0",
+  "name": "@muravjev/configs-jest-ts",
+  "version": "0.1.6",
   "keywords": [
     "muravjev",
     "configs",
     "pnpm",
-    "commitlint"
+    "typescript",
+    "jest"
   ],
-  "description": "Shared commitlint config",
+  "description": "Shared jest config",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
   "publishConfig": {
@@ -16,17 +17,18 @@
   "repository": {
     "url": "https://github.com/muravjev/configs",
     "type": "git",
-    "directory": "packages/commitlint"
+    "directory": "packages/jest-ts"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
   "bugs": {
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "@commitlint/config-conventional": "^17.1.0"
+  "devDependencies": {
+    "@types/jest": "^29.2.0"
   },
-  "peerDependencies": {
-    "@commitlint/cli": "^17.1.2"
+  "dependencies": {
+    "jest": "^29.2.2",
+    "ts-jest": "^29.0.3"
   }
 }

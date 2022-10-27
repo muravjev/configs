@@ -31,8 +31,11 @@ The purpose of the `eslint vscode plugin` is integration eslint with vscode envi
     "eslint.enable": true,
     "eslint.alwaysShowStatus": true,
     "eslint.debug": false,
-    // setup working directories in case of monorepo
-    "eslint.workingDirectories": [{ "pattern": "./packages/*/" }]
+    "eslint.workingDirectories": [
+      // Monorepo directories
+      { "pattern": "./apps/*/" },
+      { "pattern": "./packages/*/" }
+    ]
     ...
   }
   ```

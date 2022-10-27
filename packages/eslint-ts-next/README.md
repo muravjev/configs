@@ -14,32 +14,18 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
 ## Setup
 
-- Add reference to `@muravjev/configs-eslint-ts-next`:
+- Add workspace reference to `@muravjev/configs-eslint-ts-next`:
 
   ```sh
-  # add reference to app `foo`
-
-  pnpm add @muravjev/configs-eslint-ts-next -D --filter foo
+  pnpm add -w @muravjev/configs-eslint-ts-next eslint-config-next
   ```
 
 - Add eslint configuration file:
 
   ```js
-  // .eslintrc.js
+  // apps/foo/.eslintrc.js
 
   module.exports = require('@muravjev/configs-eslint-ts-next');
-  ```
-
-- (once) Modify monorepo eslint ignore patterns file:
-
-  ```bash
-  # ../../.eslintignore
-
-  ...
-  .next/
-  .export/
-  .coverage/
-  ...
   ```
 
 ## Usage

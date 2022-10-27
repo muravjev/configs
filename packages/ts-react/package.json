@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-ts-react",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "keywords": [
     "muravjev",
     "configs",
@@ -24,7 +24,7 @@
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "tsconfig.json",
-  "devDependencies": {
+  "dependencies": {
     "@muravjev/configs-ts": "workspace:*"
   },
   "peerDependencies": {

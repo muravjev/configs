@@ -6,5 +6,9 @@
   "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
   "eslint.debug": false,
-  "eslint.workingDirectories": [{ "pattern": "./packages/*/" }]
+  "eslint.workingDirectories": [
+    // Monorepo directories
+    { "pattern": "./apps/*/" },
+    { "pattern": "./packages/*/" }
+  ]
 }

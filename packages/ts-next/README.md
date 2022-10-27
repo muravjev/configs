@@ -13,12 +13,10 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 
 ## Setup
 
-- Add reference to `@muravjev/configs-ts-next` and its peers dependencies:
+- Add workspace reference to `@muravjev/configs-ts-next` and its peers dependencies:
 
   ```sh
-  # add reference to app `foo`
-
-  pnpm add @muravjev/configs-ts-next typescript @types/react -D --filter foo
+  pnpm add -w @muravjev/configs-ts-next typescript @types/node @types/react @types/react-dom
   ```
 
 - Add typescript configuration file
@@ -33,6 +31,20 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
       "rootDir": "src"
     },
     "include": ["next-env.d.ts", "src"]
+  }
+  ```
+
+- Turn **on** `next` externalDir experimental function:
+
+  ```js
+  // apps/foo/next.config.js
+
+  {
+    ...
+    "experimental": {
+      "externalDir": true //< for workspaces
+    }
+    ...
   }
   ```
 

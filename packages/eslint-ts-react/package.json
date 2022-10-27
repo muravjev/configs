@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-eslint-ts-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "muravjev",
     "configs",
@@ -25,15 +25,17 @@
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest": "^27.1.3",
     "eslint-plugin-log-filenames": "^1.0.6",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.7"
   },
   "peerDependencies": {
     "eslint": "^8.26.0"

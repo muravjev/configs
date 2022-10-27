@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-eslint-ts-next",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "muravjev",
     "configs",
@@ -25,15 +25,18 @@
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "eslint-config-next": "^12.3.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-log-filenames": "^1.0.6",
     "eslint-plugin-prettier": "^4.2.1"
   },
+  "devDependencies": {
+    "@types/eslint": "^8.4.7"
+  },
   "peerDependencies": {
-    "eslint": "^8.26.0"
+    "eslint": "^8.26.0",
+    "eslint-config-next": "^12.3.1"
   }
 }

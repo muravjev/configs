@@ -13,12 +13,10 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 
 ## Setup
 
-- Add reference to `@muravjev/configs-ts` and its peers dependencies:
+- Add workspace reference to `@muravjev/configs-ts` and its peers dependencies:
 
   ```sh
-  # add reference to packages/baz
-
-  pnpm add @muravjev/configs-ts typescript @types/react -D --filter baz
+  pnpm add -w @muravjev/configs-ts typescript @types/node
   ```
 
 - Add typescript configuration file

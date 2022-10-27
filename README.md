@@ -9,10 +9,10 @@ The purpose of this configuration is to ensure strict coding standards and facil
 ## Monorepo
 
 - [Package](docs/packages/monorepo.md)
-- [ESLint](/packages/eslint-ts/README.md)
 - [Prettier](/packages/prettier/README.md)
-- [CommitLint](/packages/commitlint/README.md)
+- [ESLint](/packages/eslint-ts/README.md)
 - [Remark](/packages/remark/README.md)
+- [CommitLint](/packages/commitlint/README.md)
 - [LintStaged](/docs/tools/lint-staged.md)
 - [Husky](/docs/tools/husky.md)
 - [Changesets](docs/tools/changesets.md)
@@ -28,6 +28,11 @@ The purpose of this configuration is to ensure strict coding standards and facil
 - [Lib package](/docs/packages/lib-react.md)
 - [ESLint](/packages/eslint-ts-react/README.md)
 - [Typescript](/packages/ts-react/README.md)
+
+## Lib
+
+- [Lib package](/docs/packages/lib.md)
+- [Typescript](/packages/ts/README.md)
 
 <br>
 

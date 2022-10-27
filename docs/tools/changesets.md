@@ -10,13 +10,10 @@ The purpose of the **[changesets ↗](https://github.com/changesets/changesets)*
 
 ## Setup
 
-- Add reference to `@changesets/cli`:
+- Add workspace reference to `@changesets/cli`:
 
   ```sh
-  # add `-w` flag for installing into monorepo root
-  # add `-D` for installing as dev dependencies
-
-  pnpm add -w -D @changesets/cli
+  pnpm add -w @changesets/cli
   ```
 
 - Initialize changesets:

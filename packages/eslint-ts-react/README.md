@@ -14,12 +14,10 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
 ## Setup
 
-- Add reference to `@muravjev/configs-eslint-ts-react`:
+- Add workspace reference to `@muravjev/configs-eslint-ts-react`:
 
   ```sh
-  # add reference to lib `bar`
-
-  pnpm add @muravjev/configs-eslint-ts-react -D --filter bar
+  pnpm add -w @muravjev/configs-eslint-ts-react eslint
   ```
 
 - Add eslint configuration file:

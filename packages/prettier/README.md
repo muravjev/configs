@@ -13,10 +13,10 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
 
 ## Setup
 
-- Add reference to `@muravjev/configs-prettier` and its peer dependencies:
+- Add workspace reference to `@muravjev/configs-prettier` and its peer dependencies:
 
   ```sh
-  pnpm add @muravjev/configs-prettier prettier -w
+  pnpm add -w @muravjev/configs-prettier prettier
   ```
 
 - Add prettier configuration file:

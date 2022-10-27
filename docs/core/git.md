@@ -21,6 +21,14 @@ The purpose of the **[git ↗](https://git-scm.com/)** is handling version contr
   # .gitignore
 
   node_modules/
+
+    # Next ignore patterns
+  .next/
+  .build/
+  .coverage/
+
+  # Custom ignore patterns
+  ...
   ```
 
 - Add git attributes file:
