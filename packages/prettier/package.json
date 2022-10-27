@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-prettier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "muravjev",
     "configs",
@@ -23,10 +23,10 @@
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "peerDependencies": {
-    "prettier": "^2.7.1"
+  "devDependencies": {
+    "@types/prettier": "^2.7.1"
   },
-  "dependencies": {
+  "peerDependencies": {
     "prettier": "^2.7.1"
   }
 }

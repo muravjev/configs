@@ -16,10 +16,7 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
 - Add reference to `@muravjev/configs-prettier` and its peer dependencies:
 
   ```sh
-  # add `-w` flag for installing into monorepo root
-  # add `-D` for installing as dev dependencies
-
-  pnpm add @muravjev/configs-prettier prettier
+  pnpm add @muravjev/configs-prettier prettier -w
   ```
 
 - Add prettier configuration file:
@@ -36,6 +33,14 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
   # .prettierignore
 
   node_modules/
+  pnpm-lock.yaml
+
+  # Next ignore patterns
+  .next/
+  .build/
+  .coverage/
+
+  # Custom ignore patterns
   ...
   ```
 
@@ -55,13 +60,12 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
 
 ## Automation
 
-- Setup [➡ lint-staged](../../docs/tools/lint-staged.md) to run `prettier` automatically on commit.
 - Setup [➡ prettier vscode plugin](../../docs/plugins/vscode-prettier.md) to integrate `prettier` with vscode environment.
 
 ## Usage
 
-- **Automatic** format of staged files with `prettier` on commit.
 - **Automatic** format file with `prettier` on save.
+- **Automatic** format of staged files with `prettier` on commit.
 - Manual usage from command line:
 
   ```sh

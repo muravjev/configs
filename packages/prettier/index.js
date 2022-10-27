@@ -1,4 +1,4 @@
-// @type {import('prettier').Config}
+/** @type {import('prettier').Config} **/
 module.exports = {
     arrowParens: 'avoid',
     printWidth: 100,
