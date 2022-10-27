@@ -1,14 +1,13 @@
 {
-  "name": "@muravjev/configs-jest-ts",
-  "version": "0.1.6",
+  "name": "@muravjev/configs-syncpack",
+  "version": "0.1.1",
   "keywords": [
     "muravjev",
     "configs",
     "pnpm",
-    "typescript",
-    "jest"
+    "syncpack"
   ],
-  "description": "Shared jest config",
+  "description": "Shared syncpack config",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
   "publishConfig": {
@@ -17,18 +16,17 @@
   "repository": {
     "url": "https://github.com/muravjev/configs",
     "type": "git",
-    "directory": "packages/jest-ts"
+    "directory": "packages/syncpack"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
   "bugs": {
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "jest": "^29.2.2",
-    "ts-jest": "^29.0.3"
-  },
   "devDependencies": {
-    "@types/jest": "^29.2.0"
+    "@types/prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "syncpack": "^8.3.8"
   }
 }

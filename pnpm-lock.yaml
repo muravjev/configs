@@ -10,12 +10,14 @@ importers:
       '@muravjev/configs-eslint-ts': workspace:*
       '@muravjev/configs-prettier': workspace:*
       '@muravjev/configs-remark': workspace:*
+      '@muravjev/configs-syncpack': workspace:*
       eslint: ^8.26.0
       husky: ^8.0.1
       lint-staged: ^13.0.3
       prettier: ^2.7.1
       remark: ^14.0.2
       remark-cli: ^11.0.0
+      syncpack: ^8.2.4
     dependencies:
       '@changesets/cli': 2.25.0
       '@commitlint/cli': 17.1.2
@@ -23,12 +25,14 @@ importers:
       '@muravjev/configs-eslint-ts': link:packages/eslint-ts
       '@muravjev/configs-prettier': link:packages/prettier
       '@muravjev/configs-remark': link:packages/remark
+      '@muravjev/configs-syncpack': link:packages/syncpack
       eslint: 8.26.0
       husky: 8.0.1
       lint-staged: 13.0.3
       prettier: 2.7.1
       remark: 14.0.2
       remark-cli: 11.0.0
+      syncpack: 8.2.4
 
   packages/commitlint:
     specifiers:
@@ -153,6 +157,15 @@ importers:
       remark-toc: 8.0.1
       remark-validate-links: 12.1.0
 
+  packages/syncpack:
+    specifiers:
+      '@types/prettier': ^2.7.1
+      syncpack: ^8.2.4
+    dependencies:
+      syncpack: 8.2.4
+    devDependencies:
+      '@types/prettier': 2.7.1
+
   packages/ts:
     specifiers:
       '@types/node': ^18.11.3
@@ -165,14 +178,10 @@ importers:
     specifiers:
       '@muravjev/configs-ts-react': workspace:*
       '@types/node': ^18.11.3
-      '@types/react': ^18.0.21
-      '@types/react-dom': ^18.0.6
       typescript: ^4.8.4
     dependencies:
       '@muravjev/configs-ts-react': link:../ts-react
       '@types/node': 18.11.7
-      '@types/react': 18.0.24
-      '@types/react-dom': 18.0.8
       typescript: 4.8.4
 
   packages/ts-react:
@@ -2161,6 +2170,11 @@ packages:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
     dev: false
 
+  /commander/9.3.0:
+    resolution: {integrity: sha512-hv95iU5uXPbK83mjrJKuZyFM/LBAoCV/XhVGkS5Je6tl7sxr6A0ITMw5WoRV46/UaJ46Nllm3Xt7IaJhXTIkzw==}
+    engines: {node: ^12.20.0 || >=14}
+    dev: false
+
   /commander/9.4.1:
     resolution: {integrity: sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==}
     engines: {node: ^12.20.0 || >=14}
@@ -2926,6 +2940,10 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
+  /expect-more/1.2.0:
+    resolution: {integrity: sha512-AVnjc5oh2jgiJjOrjbiKxbwLlNA/zsl2044Nbd09H4+2KwThtSLYKhdOusLYOrcToFAa2uBOWR1ExCN4kOWgbQ==}
+    dev: false
+
   /expect/29.2.2:
     resolution: {integrity: sha512-hE09QerxZ5wXiOhqkXy5d2G9ar+EqOyifnCXCpMNu+vZ6DG9TJ6CO2c2kPDSLqERTTWrO7OZj8EkYHQqSd78Yw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -3049,6 +3067,10 @@ packages:
   /format/0.2.2:
     resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
     engines: {node: '>=0.4.x'}
+    dev: false
+
+  /fp-ts/2.12.1:
+    resolution: {integrity: sha512-oxvgqUYR6O9VkKXrxkJ0NOyU0FrE705MeqgBUMEPWyTu6Pwn768cJbHChw2XOBlgFLKfIHxjr2OOBFpv2mUGZw==}
     dev: false
 
   /fs-extra/10.1.0:
@@ -5206,6 +5228,14 @@ packages:
       strip-bom: 3.0.0
     dev: false
 
+  /read-yaml-file/2.1.0:
+    resolution: {integrity: sha512-UkRNRIwnhG+y7hpqnycCL/xbTk7+ia9VuVTC0S+zVbwd65DI9eUpRMfsWIGrCWxTU/mi+JW8cHQCrv+zfCbEPQ==}
+    engines: {node: '>=10.13'}
+    dependencies:
+      js-yaml: 4.1.0
+      strip-bom: 4.0.0
+    dev: false
+
   /readable-stream/3.6.0:
     resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
     engines: {node: '>= 6'}
@@ -6414,6 +6444,23 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: false
+
+  /syncpack/8.2.4:
+    resolution: {integrity: sha512-Tq1RzTqQwGCe8htWqJPHcA55LqGLO4wG1F2DCGMFflfX3ujbRoiXq2MYd7XFvm3mzxv1BPVQQp8DU2ZkY14e2A==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      chalk: 4.1.2
+      commander: 9.3.0
+      cosmiconfig: 7.0.1
+      expect-more: 1.2.0
+      fp-ts: 2.12.1
+      fs-extra: 10.1.0
+      glob: 8.0.3
+      minimatch: 5.1.0
+      read-yaml-file: 2.1.0
+      semver: 7.3.7
     dev: false
 
   /term-size/2.2.1:
