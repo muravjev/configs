@@ -1,0 +1,36 @@
+{
+  "name": "@muravjev/configs-jest-ts-react",
+  "version": "0.1.0",
+  "keywords": [
+    "muravjev",
+    "configs",
+    "pnpm",
+    "typescript",
+    "jest",
+    "react"
+  ],
+  "description": "Shared jest config",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/muravjev/configs",
+    "type": "git",
+    "directory": "packages/jest-ts-react"
+  },
+  "homepage": "https://github.com/muravjev/configs#readme",
+  "bugs": {
+    "url": "https://github.com/muravjev/configs/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@testing-library/react": "^13.4.0",
+    "jest": "^29.2.2",
+    "ts-jest": "^29.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.0"
+  }
+}

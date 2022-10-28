@@ -1,6 +1,6 @@
 # Monorepo Configuration | 2023
 
-The purpose of this configuration is to ensure strict coding standards and facilitate coding experience using monorepo with `pnpm` + `typescript` + `eslint` + `prettier` + `remark` + `husky` + `lintstaged` + `commitlint` + `changesets`.
+The purpose of this configuration is to ensure strict coding standards and facilitate coding experience using monorepo with `pnpm` + `typescript` + `eslint` + `prettier` + `remark` + `husky` + `lintstaged` + `commitlint` + `changesets` + `syncpack`.
 
 ## Core
 
@@ -8,7 +8,7 @@ The purpose of this configuration is to ensure strict coding standards and facil
 
 ## Monorepo
 
-- [Package](docs/packages/monorepo.md)
+- [Monorepo](docs/packages/monorepo.md)
 - [Prettier](/packages/prettier/README.md)
 - [ESLint](/packages/eslint-ts/README.md)
 - [Remark](/packages/remark/README.md)
@@ -16,23 +16,26 @@ The purpose of this configuration is to ensure strict coding standards and facil
 - [LintStaged](/docs/tools/lint-staged.md)
 - [Husky](/docs/tools/husky.md)
 - [Changesets](docs/tools/changesets.md)
-
-## App | `next`
-
-- [App package](/docs/packages/app-next.md)
-- [ESLint](/packages/eslint-ts-next/README.md)
-- [Typescript](/packages/ts-next/README.md)
-
-## Lib | `react`
-
-- [Lib package](/docs/packages/lib-react.md)
-- [ESLint](/packages/eslint-ts-react/README.md)
-- [Typescript](/packages/ts-react/README.md)
+- [Syncpack](/packages/syncpack/README.md)
 
 ## Lib
 
-- [Lib package](/docs/packages/lib.md)
+- [Lib](/docs/packages/lib.md)
 - [Typescript](/packages/ts/README.md)
+- [Jest](/packages/jest-ts/README.md)
+
+## Lib | `react`
+
+- [React Lib](/docs/packages/lib-react.md)
+- [ESLint](/packages/eslint-ts-react/README.md)
+- [Typescript](/packages/ts-react/README.md)
+- [Jest](/packages/jest-ts-react/README.md)
+
+## App | `next`
+
+- [Next App](/docs/packages/app-next.md)
+- [ESLint](/packages/eslint-ts-next/README.md)
+- [Typescript](/packages/ts-next/README.md)
 
 <br>
 
