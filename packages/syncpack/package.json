@@ -19,9 +19,7 @@
     "directory": "packages/syncpack"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
-  "bugs": {
-    "url": "https://github.com/muravjev/configs/issues"
-  },
+  "bugs": "https://github.com/muravjev/configs/issues",
   "main": "index.js",
   "devDependencies": {
     "@types/prettier": "^2.7.1"

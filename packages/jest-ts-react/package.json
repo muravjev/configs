@@ -21,9 +21,7 @@
     "directory": "packages/jest-ts-react"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
-  "bugs": {
-    "url": "https://github.com/muravjev/configs/issues"
-  },
+  "bugs": "https://github.com/muravjev/configs/issues",
   "main": "index.js",
   "devDependencies": {
     "@types/jest": "^29.2.0"

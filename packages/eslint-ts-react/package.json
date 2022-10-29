@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-eslint-ts-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "muravjev",
     "configs",
@@ -21,9 +21,7 @@
     "directory": "packages/eslint-ts-react"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
-  "bugs": {
-    "url": "https://github.com/muravjev/configs/issues"
-  },
+  "bugs": "https://github.com/muravjev/configs/issues",
   "main": "index.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.1",

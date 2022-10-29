@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-ts-next",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "keywords": [
     "muravjev",
     "configs",
@@ -20,9 +20,7 @@
     "directory": "packages/ts-next"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
-  "bugs": {
-    "url": "https://github.com/muravjev/configs/issues"
-  },
+  "bugs": "https://github.com/muravjev/configs/issues",
   "main": "tsconfig.json",
   "dependencies": {
     "@muravjev/configs-ts-react": "workspace:*"

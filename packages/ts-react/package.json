@@ -20,9 +20,7 @@
     "directory": "packages/ts-react"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
-  "bugs": {
-    "url": "https://github.com/muravjev/configs/issues"
-  },
+  "bugs": "https://github.com/muravjev/configs/issues",
   "main": "tsconfig.json",
   "dependencies": {
     "@muravjev/configs-ts": "workspace:*"
