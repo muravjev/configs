@@ -25,12 +25,13 @@
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "@testing-library/react": "^13.4.0",
-    "jest": "^29.2.2",
-    "ts-jest": "^29.0.3"
-  },
   "devDependencies": {
     "@types/jest": "^29.2.0"
+  },
+  "peerDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
+    "ts-jest": "^29.0.3"
   }
 }

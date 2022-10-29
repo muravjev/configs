@@ -16,7 +16,7 @@ The purpose of the [jest](https://jestjs.io/) is to test `javascript`.
 - Add workspace reference to `@muravjev/configs-jest-ts-react` and its peers dependencies:
 
   ```sh
-  pnpm add -w @muravjev/configs-jest-ts-react jest ts-jest @testing-library/react @testing-library/jest-dom
+  pnpm add -w @muravjev/configs-jest-ts-react jest ts-jest jest-environment-jsdom @testing-library/react
   ```
 
 - Add jest configuration file

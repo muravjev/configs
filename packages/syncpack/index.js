@@ -7,7 +7,7 @@ module.exports = {
     resolutions: true,
     overrides: true,
     pnpmOverrides: true,
-    workspace: true,
+    workspace: false,
     semverGroups: [],
     semverRange: '^',
     sortAz: ['dependencies', 'devDependencies', 'peerDependencies'],

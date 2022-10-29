@@ -24,11 +24,11 @@
     "url": "https://github.com/muravjev/configs/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "jest": "^29.2.2",
-    "ts-jest": "^29.0.3"
-  },
   "devDependencies": {
     "@types/jest": "^29.2.0"
+  },
+  "peerDependencies": {
+    "jest": "^29.2.2",
+    "ts-jest": "^29.0.3"
   }
 }

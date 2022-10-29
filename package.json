@@ -34,7 +34,7 @@
     "prettier": "^2.7.1",
     "remark": "^14.0.2",
     "remark-cli": "^11.0.0",
-    "syncpack": "^8.3.8"
+    "syncpack": "^8.3.9"
   },
   "engines": {
     "node": ">=14.16.0",

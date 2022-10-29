@@ -27,6 +27,6 @@
     "@types/prettier": "^2.7.1"
   },
   "peerDependencies": {
-    "syncpack": "^8.3.8"
+    "syncpack": "^8.3.9"
   }
 }
