@@ -19,7 +19,7 @@ importers:
       remark-cli: ^11.0.0
       syncpack: ^8.3.9
     dependencies:
-      '@changesets/cli': 2.25.0
+      '@changesets/cli': 2.25.1
       '@commitlint/cli': 17.1.2
       '@muravjev/configs-commitlint': link:packages/commitlint
       '@muravjev/configs-eslint-ts': link:packages/eslint-ts
@@ -193,10 +193,18 @@ importers:
     specifiers:
       '@muravjev/configs-ts-react': workspace:*
       '@types/node': ^18.11.3
+      '@types/react': ^18.0.21
+      '@types/react-dom': ^18.0.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
       typescript: ^4.8.4
     dependencies:
       '@muravjev/configs-ts-react': link:../ts-react
       '@types/node': 18.11.7
+      '@types/react': 18.0.24
+      '@types/react-dom': 18.0.8
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       typescript: 4.8.4
 
   packages/ts-react:
@@ -605,8 +613,8 @@ packages:
       '@changesets/types': 5.2.0
     dev: false
 
-  /@changesets/cli/2.25.0:
-    resolution: {integrity: sha512-Svu5KD2enurVHGEEzCRlaojrHjVYgF9srmMP9VQSy9c1TspX6C9lDPpulsSNIjYY9BuU/oiWpjBgR7RI9eQiAA==}
+  /@changesets/cli/2.25.1:
+    resolution: {integrity: sha512-e65ZJ7QKq7aERV/vAeuG0DTkkuEnTZK8eVNYqnd6wBsc9YTK+5iuuzp8aG0E80AngxeOaI4u77OIfzE9fv2T5Q==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.20.0
@@ -2070,7 +2078,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001426
+      caniuse-lite: 1.0.30001427
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -2129,8 +2137,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /caniuse-lite/1.0.30001426:
-    resolution: {integrity: sha512-n7cosrHLl8AWt0wwZw/PJZgUg3lV0gk9LMI7ikGJwhyhgsd2Nb65vKvmSexCqq/J7rbH3mFG6yZZiPR5dLPW5A==}
+  /caniuse-lite/1.0.30001427:
+    resolution: {integrity: sha512-lfXQ73oB9c8DP5Suxaszm+Ta2sr/4tf8+381GkIm1MLj/YdLf+rEDyDSRCzeltuyTVGm+/s18gdZ0q+Wmp8VsQ==}
     dev: false
 
   /chalk/2.4.2:

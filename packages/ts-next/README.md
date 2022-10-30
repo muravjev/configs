@@ -16,7 +16,7 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 - Add workspace reference to `@muravjev/configs-ts-next` and its peers dependencies:
 
   ```sh
-  pnpm add -w @muravjev/configs-ts-next typescript @types/node @types/react @types/react-dom
+  pnpm add -w @muravjev/configs-ts-next typescript react react-dom @types/node @types/react @types/react-dom
   ```
 
 - Add typescript configuration file

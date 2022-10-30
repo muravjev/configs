@@ -17,7 +17,7 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 - Add workspace reference to `@muravjev/configs-eslint-ts-next`:
 
   ```sh
-  pnpm add -w @muravjev/configs-eslint-ts-next eslint-config-next
+  pnpm add -w @muravjev/configs-eslint-ts-next eslint
   ```
 
 - Add eslint configuration file:

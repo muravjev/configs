@@ -27,15 +27,15 @@ The purpose of this configuration is to ensure strict coding standards and facil
 ## Lib | `react`
 
 - [React Lib](/docs/packages/lib-react.md)
-- [ESLint](/packages/eslint-ts-react/README.md)
 - [Typescript](/packages/ts-react/README.md)
+- [ESLint](/packages/eslint-ts-react/README.md)
 - [Jest](/packages/jest-ts-react/README.md)
 
 ## App | `next`
 
 - [Next App](/docs/packages/app-next.md)
-- [ESLint](/packages/eslint-ts-next/README.md)
 - [Typescript](/packages/ts-next/README.md)
+- [ESLint](/packages/eslint-ts-next/README.md)
 
 <br>
 
