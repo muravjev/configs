@@ -8,6 +8,7 @@ The purpose of the [syncpack](https://www.npmjs.com/package/syncpack) is formatt
 
 - [Setup](#setup)
 - [Usage](#usage)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
@@ -46,6 +47,12 @@ The purpose of the [syncpack](https://www.npmjs.com/package/syncpack) is formatt
   pnpm format:check .
   pnpm format:fix .
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 

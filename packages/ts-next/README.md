@@ -9,6 +9,7 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 ## Contents
 
 - [Setup](#setup)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
@@ -21,7 +22,7 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 
 - Add typescript configuration file
 
-  ```json
+  ```jsonc
   // apps/foo/tsconfig.json
 
   {
@@ -47,6 +48,12 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
     ...
   }
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 

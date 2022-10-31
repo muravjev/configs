@@ -11,6 +11,7 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 - [Setup](#setup)
 - [Automation](#automation)
 - [Usage](#usage)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
@@ -73,6 +74,12 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
   pnpm lint .
   pnpm lint:fix .
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 
