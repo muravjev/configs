@@ -1,4 +1,4 @@
-# @muravjev/configs-ts
+# @muravjev/configs-jest-ts-react
 
 ## 0.1.2
 
