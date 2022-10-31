@@ -1,6 +1,6 @@
 {
   "name": "@muravjev/configs-commitlint",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "keywords": [
     "muravjev",
     "configs",
@@ -19,11 +19,9 @@
     "directory": "packages/commitlint"
   },
   "homepage": "https://github.com/muravjev/configs#readme",
-  "bugs": {
-    "url": "https://github.com/muravjev/configs/issues"
-  },
+  "bugs": "https://github.com/muravjev/configs/issues",
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "@commitlint/config-conventional": "^17.1.0"
   },
   "peerDependencies": {

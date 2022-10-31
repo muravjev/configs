@@ -11,19 +11,16 @@ The purpose of the `lint-staged` is to lint and to format indexed files before t
 
 ## Prerequisites
 
-- [➡ remark](../../packages/remark/README.md) - linting and formatting `markdown` files.
-- [➡ prettier](../../packages/prettier/README.md) - formatting `js`, `ts`, `tsx`, `md`, `json`, `yaml` files.
 - [➡ eslint](../../packages/eslint-ts/README.md) - linting `javascipt` and `typescript` languages.
+- [➡ prettier](../../packages/prettier/README.md) - formatting `js`, `ts`, `tsx`, `md`, `json`, `yaml` files.
+- [➡ remark](../../packages/remark/README.md) - linting and formatting `markdown` files.
 
 ## Setup
 
-- Add reference to `lint-staged`:
+- Add workspace reference to `lint-staged`:
 
   ```sh
-  # add `-w` flag for installing into monorepo root
-  # add `-D` for installing as dev dependencies
-
-  pnpm add lint-staged
+  pnpm add -w lint-staged
   ```
 
 - Add lint-staged configuration file:
@@ -37,8 +34,6 @@ The purpose of the `lint-staged` is to lint and to format indexed files before t
     '*.{mjs,js,ts,tsx}': 'pnpm lint:fix'
   };
   ```
-
-- Continue with [➡ husky](./husky.md) setup to schedule `lint-staged` execution on commit.
 
 ## Usage
 

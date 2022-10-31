@@ -9,17 +9,15 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
 - [Setup](#setup)
 - [Automation](#automation)
 - [Usage](#usage)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
 
-- Add reference to `@muravjev/configs-prettier` and its peer dependencies:
+- Add workspace reference to `@muravjev/configs-prettier` and its peer dependencies:
 
   ```sh
-  # add `-w` flag for installing into monorepo root
-  # add `-D` for installing as dev dependencies
-
-  pnpm add @muravjev/configs-prettier prettier
+  pnpm add -w @muravjev/configs-prettier prettier
   ```
 
 - Add prettier configuration file:
@@ -36,6 +34,14 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
   # .prettierignore
 
   node_modules/
+  pnpm-lock.yaml
+
+  # Next ignore patterns
+  .next/
+  .build/
+  .coverage/
+
+  # Custom ignore patterns
   ...
   ```
 
@@ -55,19 +61,24 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
 
 ## Automation
 
-- Setup [➡ lint-staged](../../docs/tools/lint-staged.md) to run `prettier` automatically on commit.
 - Setup [➡ prettier vscode plugin](../../docs/plugins/vscode-prettier.md) to integrate `prettier` with vscode environment.
 
 ## Usage
 
-- **Automatic** format of staged files with `prettier` on commit.
 - **Automatic** format file with `prettier` on save.
+- **Automatic** format of staged files with `prettier` on commit.
 - Manual usage from command line:
 
   ```sh
   pnpm format:check .
   pnpm format:fix .
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 

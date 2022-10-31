@@ -28,7 +28,8 @@ The purpose of the `prettier vscode plugin` is integration prettier with vscode 
 
   {
     ...
-    "files.eol": "\n",
+    "files.eol": "\n", // for consistent line ending across different systems.
+
     "prettier.requireConfig": true,
     ...
   }

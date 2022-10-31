@@ -1,14 +1,14 @@
-# Lib | `react`
+# Lib
 
 ## Setup
 
 - Create `package` file:
 
   ```jsonc
-  // packages/bar/package.json
+  // packages/baz/package.json
 
   {
-    "name": "bar",
+    "name": "baz",
     "private": true
   }
   ```

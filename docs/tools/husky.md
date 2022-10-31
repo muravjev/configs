@@ -16,13 +16,16 @@ The purpose of the `husky` is running tasks on certain git actions.
 
 ## Setup
 
-- Add reference to `husky`:
+- Add workspace reference to `husky`:
 
   ```sh
-  # add `-w` flag for installing into monorepo root
-  # add `-D` for installing as dev dependencies
+  pnpm add -w husky
+  ```
 
-  pnpm add -husky
+- Manually install `husky` hooks:
+
+  ```sh
+  pnpm husky install
   ```
 
 - Add husky's install hooks script:
@@ -40,13 +43,13 @@ The purpose of the `husky` is running tasks on certain git actions.
 - Add `pre-commit` hook for linting and formatting indexed files using [lint-staged](./lint-staged.md):
 
   ```sh
-  pnpx husky add .husky/pre-commit 'pnpx lint-staged --quiet'
+  pnpm husky add .husky/pre-commit 'pnpm lint-staged --quiet'
   ```
 
 - Add `commit-msg` hook for linting of commit message using [commitlint](../../packages/commitlint/README.md):
 
   ```sh
-  pnpx husky add .husky/commit-msg 'pnpm commitlint --edit $1'
+  pnpm husky add .husky/commit-msg 'pnpm commitlint --edit $1'
   ```
 
 ## Usage

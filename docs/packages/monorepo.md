@@ -48,7 +48,7 @@ The purpose of the **[package ↗](https://docs.npmjs.com/about-packages-and-mod
   }
   ```
 
-- Add npm cponfiguration file:
+- Add npm configuration file:
 
   ```yaml
   # .npmrc
@@ -66,11 +66,6 @@ The purpose of the **[package ↗](https://docs.npmjs.com/about-packages-and-mod
     - 'apps/*'
     - 'packages/*'
   ```
-
-```yaml
----
-..
-```
 
 ## License
 

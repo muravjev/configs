@@ -2,13 +2,13 @@
   "compilerOptions": {
     "module": "esnext", //< the output module resolution system
     "moduleResolution": "node", //< how the compiler tries to resolve modules
-    "target": "es6", //< terget language
+    "target": "es6", //< target language
     "lib": ["esnext"], //< which language features are available
     "esModuleInterop": true,
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "allowJs": false,
     "strict": true,
     "skipLibCheck": true,

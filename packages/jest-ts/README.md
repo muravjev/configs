@@ -1,6 +1,6 @@
-# Shared typescript configuration
+# Shared jest configuration
 
-The purpose of the [typescript](https://www.typescriptlang.org/) is to add strong typing to `javascript`.
+The purpose of the [jest](https://jestjs.io/) is to test `javascript`.
 
 > This configuration targets **lib typescript** packages.
 
@@ -14,25 +14,18 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 
 ## Setup
 
-- Add workspace reference to `@muravjev/configs-ts` and its peers dependencies:
+- Add workspace reference to `@muravjev/configs-jest-ts` and its peers dependencies:
 
   ```sh
-  pnpm add -w @muravjev/configs-ts typescript @types/node
+  pnpm add -w @muravjev/configs-jest-ts jest ts-jest @types/jest
   ```
 
-- Add typescript configuration file
+- Add jest configuration file
 
-  ```jsonc
-  // packages/baz/tsconfig.json
+  ```js
+  // packages/baz/jest.config.js
 
-  {
-    "extends": "@muravjev/configs-ts",
-    "compilerOptions": {
-      "baseUrl": "src",
-      "rootDir": "src"
-    },
-    "include": ["src"]
-  }
+  module.exports = require('@muravjev/configs-jest-ts');
   ```
 
 ## Donation

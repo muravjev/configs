@@ -1,6 +1,6 @@
 # @muravjev/configs-ts-next
 
-## 0.1.0
+## 0.1.3
 
 ### Minor Changes
 

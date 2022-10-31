@@ -10,16 +10,15 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
 - [Setup](#setup)
 - [Usage](#usage)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
 
-- Add reference to `@muravjev/configs-eslint-ts-react`:
+- Add workspace reference to `@muravjev/configs-eslint-ts-react`:
 
   ```sh
-  # add reference to lib `bar`
-
-  pnpm add @muravjev/configs-eslint-ts-react -D --filter bar
+  pnpm add -w @muravjev/configs-eslint-ts-react eslint
   ```
 
 - Add eslint configuration file:
@@ -40,6 +39,12 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
   pnpm lint packages/bar
   pnpm lint:fix packages/bar
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 

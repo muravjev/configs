@@ -1,18 +1,9 @@
+/** @type {import('eslint').Linter.BaseConfig} **/
 module.exports = {
-    root: true,
-    env: {
-        browser: true,
-        node: true,
-        jest: true
-    },
-    plugins: ['log-filenames', 'prettier'],
-    extends: ['eslint:recommended', 'prettier'],
-    parserOptions: {
-        ecmaVersion: 'latest'
-    },
+    ...require('@muravjev/configs-eslint-ts'),
     overrides: [
         {
-            files: ['**/*.ts', '**/*.tsx'],
+            files: ['*.ts', '*.tsx'],
             parser: '@typescript-eslint/parser',
             plugins: [
                 '@typescript-eslint',
@@ -53,7 +44,8 @@ module.exports = {
             },
             parserOptions: {
                 ecmaVersion: 'latest',
-                project: ['./packages/*/*/tsconfig.json']
+                sourceType: 'module',
+                project: ['packages/*/tsconfig.json', 'apps/*/tsconfig.json']
             },
             settings: {
                 react: {

@@ -10,36 +10,23 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
 - [Setup](#setup)
 - [Usage](#usage)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
 
-- Add reference to `@muravjev/configs-eslint-ts-next`:
+- Add workspace reference to `@muravjev/configs-eslint-ts-next`:
 
   ```sh
-  # add reference to app `foo`
-
-  pnpm add @muravjev/configs-eslint-ts-next -D --filter foo
+  pnpm add -w @muravjev/configs-eslint-ts-next eslint
   ```
 
 - Add eslint configuration file:
 
   ```js
-  // .eslintrc.js
+  // apps/foo/.eslintrc.js
 
   module.exports = require('@muravjev/configs-eslint-ts-next');
-  ```
-
-- (once) Modify monorepo eslint ignore patterns file:
-
-  ```bash
-  # ../../.eslintignore
-
-  ...
-  .next/
-  .export/
-  .coverage/
-  ...
   ```
 
 ## Usage
@@ -52,6 +39,12 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
   pnpm lint apps/foo
   pnpm lint:fix apps/foo
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 

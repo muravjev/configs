@@ -1,6 +1,6 @@
-# @muravjev/configs-remark
+# @muravjev/configs-syncpack
 
-## 0.1.4
+## 0.1.3
 
 ### Minor Changes
 

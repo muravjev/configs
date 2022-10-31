@@ -11,14 +11,15 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 - [Setup](#setup)
 - [Automation](#automation)
 - [Usage](#usage)
+- [Donation](#donation)
 - [License](#license)
 
 ## Setup
 
-- Add reference to `@muravjev/configs-eslint-ts` and its peer dependencies:
+- Add workspace reference to `@muravjev/configs-eslint-ts` and its peer dependencies:
 
   ```sh
-  pnpm add @muravjev/configs-eslint-ts eslint -w
+  pnpm add -w @muravjev/configs-eslint-ts eslint
   ```
 
 - Add eslint configuration file:
@@ -34,7 +35,15 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
   ```sh
   # .eslintignore
 
+  !.*
   node_modules/
+
+  # Next ignore patterns
+  .next/
+  .build/
+  .coverage/
+
+  # Custom ignore patterns
   ...
   ```
 
@@ -45,7 +54,7 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
   "scripts": {
     ...
-    "lint": "eslint",
+    "lint": "eslint --ext mjs,js,ts,tsx",
     "lint:fix": "pnpm lint --fix"
     ...
   }
@@ -53,19 +62,24 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
 ## Automation
 
-- Setup [➡ lint-staged](../../docs/tools/lint-staged.md) to run `eslint` automatically on commit.
 - Setup [➡ eslint vscode plugin](../../docs/plugins/vscode-eslint.md) to integrate `eslint` with vscode environment.
 
 ## Usage
 
-- **Automatic** validation of staged files with `eslint` on commit.
 - **Automatic** validation file with `eslint` on save.
+- **Automatic** validation of staged files with `eslint` on commit.
 - Manual usage from command line:
 
   ```sh
   pnpm lint .
   pnpm lint:fix .
   ```
+
+## Donation
+
+If you found this project helpful, consider\
+[**buying me a coffee**](https://www.buymeacoffee.com/muravjev), [**donate by paypal**](https://www.paypal.me/muravjev) or just [**leave a star**](../../../..)⭐\
+Thanks for your support, it is much appreciated!
 
 ## License
 
