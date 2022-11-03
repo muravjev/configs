@@ -1,6 +1,9 @@
 {
   "name": "@muravjev/configs-jest-ts-react",
   "version": "0.1.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "muravjev",
     "configs",
@@ -12,9 +15,6 @@
   "description": "Shared jest config",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "url": "https://github.com/muravjev/configs",
     "type": "git",

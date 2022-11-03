@@ -1,6 +1,9 @@
 {
   "name": "@muravjev/configs-eslint-ts-next",
   "version": "0.1.4",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "muravjev",
     "configs",
@@ -12,9 +15,6 @@
   "description": "Shared eslint config for app (ts + next) packages",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "url": "https://github.com/muravjev/configs",
     "type": "git",

@@ -1,6 +1,9 @@
 {
   "name": "@muravjev/configs-ts",
   "version": "0.1.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "muravjev",
     "configs",
@@ -10,9 +13,6 @@
   "description": "Shared typescript config for monorepo (ts) and lib (ts) packages",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "url": "https://github.com/muravjev/configs",
     "type": "git",
