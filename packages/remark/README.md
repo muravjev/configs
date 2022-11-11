@@ -25,8 +25,7 @@ The purpose of the `remark` is linting, formatting and autogenerate contents of 
   ```js
   // .remarkrc.mjs
 
-  import config from '@muravjev/configs-remark';
-  export default config;
+  export { default } from '@muravjev/configs-remark';
   ```
 
 - Add remark ignore patterns file:
