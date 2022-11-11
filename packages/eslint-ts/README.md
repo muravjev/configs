@@ -54,7 +54,7 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
   "scripts": {
     ...
-    "lint": "eslint --ext mjs,js,ts,tsx",
+    "lint": "eslint --ext js,cjs,mjs,ts,tsx",
     "lint:fix": "pnpm lint --fix"
     ...
   }
