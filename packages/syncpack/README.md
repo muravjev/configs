@@ -1,6 +1,6 @@
 # Shared syncpack configuration
 
-The purpose of the [syncpack](https://www.npmjs.com/package/syncpack) is formatting package jsons and validating dependecies versions.
+The purpose of the [syncpack](https://www.npmjs.com/package/syncpack) is formatting package json and validating dependencies versions.
 
 ---
 
