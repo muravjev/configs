@@ -11,7 +11,7 @@ The purpose of the `lint-staged` is to lint and to format indexed files before t
 
 ## Prerequisites
 
-- [➡ eslint](../../packages/eslint-ts/README.md) - linting `javascipt` and `typescript` languages.
+- [➡ eslint](../../packages/eslint-ts/README.md) - linting `javascript` and `typescript` languages.
 - [➡ prettier](../../packages/prettier/README.md) - formatting `js`, `ts`, `tsx`, `md`, `json`, `yaml` files.
 - [➡ remark](../../packages/remark/README.md) - linting and formatting `markdown` files.
 
@@ -29,8 +29,8 @@ The purpose of the `lint-staged` is to lint and to format indexed files before t
   // .lintstagedrc.mjs
 
   export default {
-    '*.md': 'pnpm remark:fix',
-    '*.{mjs,js,ts,tsx,md,json,yaml}': 'pnpm format:fix',
+    '*.md': ['pnpm remark:fix', 'pnpm format:fix'],
+    '*.{mjs,js,ts,tsx,json,yaml}': 'pnpm format:fix',
     '*.{mjs,js,ts,tsx}': 'pnpm lint:fix'
   };
   ```

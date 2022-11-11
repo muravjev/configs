@@ -36,7 +36,7 @@ The purpose of the **[package ↗](https://docs.npmjs.com/about-packages-and-mod
       "nuke": "rimraf pnpm-lock.yaml && pnpm fresh"
     },
 
-    // Prevent using other package menagers except pnpm
+    // Prevent using other package managers except pnpm
 
     "engines": {
       "node": ">=14.16.0",

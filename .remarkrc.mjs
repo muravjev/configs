@@ -1,2 +1,1 @@
-import config from '@muravjev/configs-remark';
-export default config;
+export { default } from '@muravjev/configs-remark';

@@ -28,7 +28,7 @@ The purpose of the **[changesets ↗](https://github.com/changesets/changesets)*
 
   ```sh
   # Add temporary changeset entries in .changesets folder.
-  # Entries can be safely commited until release.
+  # Entries can be safely committed until release.
   pnpm changeset add
   ```
 

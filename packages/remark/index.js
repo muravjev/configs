@@ -36,8 +36,11 @@ const remarkConfig = {
     ],
     settings: {
         rule: '-',
-        bullet: '-', // Use `-` for list item bullets
+        bullet: '-',
+        strong: '*',
+        emphasis: '_',
         listItemIndent: 'one',
+        tightDefinitions: true,
         fences: true
     }
 };

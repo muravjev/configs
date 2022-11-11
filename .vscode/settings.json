@@ -10,5 +10,24 @@
     // Monorepo directories
     { "pattern": "./apps/*/" },
     { "pattern": "./packages/*/" }
+  ],
+
+  "cSpell.words": [
+    "commitlint",
+    "commitlintrc",
+    "dbaeumer",
+    "esbenp",
+    "frontmatter",
+    "lintstaged",
+    "lintstagedrc",
+    "muravjev",
+    "npmrc",
+    "remarkignore",
+    "remarkrc",
+    "sergey",
+    "syncpack",
+    "syncpackrc",
+    "tsbuildinfo",
+    "unifiedjs"
   ]
 }

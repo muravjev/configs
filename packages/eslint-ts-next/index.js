@@ -9,7 +9,7 @@ module.exports = {
             extends: [
                 'eslint:recommended',
                 'plugin:@typescript-eslint/recommended',
-                // 'plugin:@typescript-eslint/recommended-requiring-type-checking', // fails to initialise with vs code
+                // 'plugin:@typescript-eslint/recommended-requiring-type-checking', // fails to initialize with vs code
                 // 'plugin:jest/recommended',
                 // 'plugin:react/recommended', //< covered in next
                 // 'plugin:react-hooks/recommended', //< covered in next
