@@ -17,7 +17,7 @@
     "remark:fix": "pnpm remark -o --",
     "commitlint": "commitlint",
     "syncpack:fix": "syncpack format && syncpack fix-mismatches",
-    "fix": "pnpm lint:fix . && pnpm remark:fix . & pnpm format:fix . && pnpm syncpack:fix",
+    "fix": "pnpm lint:fix . && pnpm remark:fix . && pnpm format:fix . && pnpm syncpack:fix",
     "prepare": "husky install"
   },
   "dependencies": {
